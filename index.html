@@ -59,6 +59,7 @@
             maxWidth: {
               309: "19.3125rem", // 346px
               346: "21.625rem", // 346px
+              495: "30.9375rem",
               502: "31.375rem", // 502px
               518: "32.375rem", // 518px
               607: "37.9375rem", // 607px
@@ -140,7 +141,7 @@
 
     <main>
       <!-- ! banner section -->
-      <section class="container mt-14 px-5 lg:px-0">
+      <section class="container mt-14 px-5 lg:px-0 hidden">
         <div class="relative">
           <div
             class="carousel w-full min-h-[34.375rem] rounded-16 overflow-hidden"
@@ -218,7 +219,7 @@
       </section>
 
       <!-- ! professional hockey club -->
-      <section class="container mt-10 lg:mt-[6.25rem] px-5 lg:px-0">
+      <section class="container mt-10 lg:mt-[6.25rem] px-5 lg:px-0 hidden">
         <div class="divider mb-8"></div>
 
         <h3
@@ -227,7 +228,7 @@
           Professional Hockeys Club
         </h3>
         <p
-          class="max-w-607 mx-auto text-center font-medium leading-26 text-base"
+          class="max-w-607 mx-auto text-center font-medium leading-26 text-base text-black/60"
         >
           Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
           placerat dolor. Purus urna in sit nullam proin.
@@ -259,7 +260,7 @@
           <!-- ! second -->
           <div class="flex flex-col items-center justify-center">
             <div
-              class="radial-progress text-emerald-400 rotate-[120deg] mb-6 "
+              class="radial-progress text-emerald-400 rotate-[120deg] mb-6"
               style="--value: 92"
               role="progressbar"
             >
@@ -277,7 +278,7 @@
               Amet consectetur. Condimentum dignissim adipiscing .
             </p>
           </div>
-           <!-- ! third -->
+          <!-- ! third -->
           <div class="flex flex-col items-center justify-center">
             <div
               class="radial-progress text-amber-500 rotate-[120deg] mb-6"
@@ -321,6 +322,80 @@
           </div>
         </div>
       </section>
+
+      <!-- ! program section -->
+      <section class="container mt-10 lg:mt-[6.25rem] px-5 lg:px-0">
+        <div class="divider mb-8"></div>
+
+        <h3
+          class="text-4xl font-extrabold leading-normal text-center lg:mb-6 text-black/80"
+        >
+          Program Sections
+        </h3>
+        <p
+          class="max-w-607 mx-auto text-center font-medium leading-26 text-base text-black/60"
+        >
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat dolor. Purus urna in sit nullam proin.
+        </p>
+        <div class="divider mt-8"></div>
+
+        <!-- ! grid -->
+
+        <div class="mt-12 grid grid-cols-12 grid-rows-[repete(minmax(244px_1fr))] lg:grid-rows-[338px_450px] gap-6">
+          <!-- ! one -->
+          <div
+            class="col-span-12 lg:col-span-6 bg-[linear-gradient(135deg,rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./images/2.png)] bg-no-repeat bg-center bg-cover space-y-4 flex flex-col justify-end p-6 lg:pl-10 lg:pb-10 rounded-16 overflow-hidden"
+          >
+            <h3 class="text-white text-xl lg:text-28 font-extrabold">Junior Program</h3>
+            <p class="text-white/90 max-w-495 font-medium text-sm lg:text-base leading-6 lg:leading-26">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
+              morbi nulla. Tortor congue sed et in.
+            </p>
+            <button
+              class="mt-2 text-lg lg:text-xl self-start font-bold text-white py-2 px-4 lg:py-3 lg:px-6 bg-main rounded-lg"
+            >
+              Register Now!
+            </button>
+          </div>
+
+          <!-- ! two -->
+          <div
+          class="col-span-12 lg:col-span-6 bg-[linear-gradient(135deg,rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./images/3.png)] bg-no-repeat bg-center bg-cover space-y-4 flex flex-col justify-end p-6 lg:pl-10 lg:pb-10  rounded-16 overflow-hidden"
+        >
+          <h3 class="text-white text-xl lg:text-28 font-extrabold">Teenager Program</h3>
+          <p class="text-white/90 max-w-495 font-medium text-sm lg:text-base leading-6 lg:leading-26">
+            Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
+            morbi nulla. Tortor congue sed et in.
+          </p>
+          <button
+            class="mt-2 text-lg lg:text-xl self-start font-bold text-white py-2 px-4 lg:py-3 lg:px-6 bg-main rounded-lg"
+          >
+            Register Now!
+          </button>
+        </div>
+
+        <!-- ! three -->
+        <div
+        class="col-span-12 bg-[linear-gradient(135deg,rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./images/4.png)] bg-no-repeat bg-center bg-cover space-y-4 flex flex-col justify-end p-6 lg:pl-10 lg:pb-10 rounded-16 overflow-hidden"
+      >
+        <h3 class="text-white text-xl lg:text-28 font-extrabold">Professional Program</h3>
+        <p class="text-white/90 max-w-495 font-medium text-sm lg:text-base leading-6 lg:leading-26">
+          Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+          enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
+          morbi nulla. Tortor congue sed et in.
+        </p>
+        <button
+          class="mt-2 text-lg lg:text-xl self-start font-bold text-white py-2 px-4 lg:py-3 lg:px-6 bg-main rounded-lg"
+        >
+          Register Now!
+        </button>
+      </div>
+        </div>
+      </section>
+      
     </main>
 
     <p class="mt-20"></p>
