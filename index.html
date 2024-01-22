@@ -66,6 +66,9 @@
             lineHeight: {
               26: "1.625rem", // 26px
             },
+            borderRadius: {
+              16: "1rem",
+            },
           },
         },
       };
@@ -84,13 +87,13 @@
   </head>
   <body class="font-manrope">
     <header class="container">
-      <nav class="flex items-center justify-between mt-14">
-        <div class="flex items-center gap-4">
-          <button class="btn btn-ghost text-2xl lg:hidden">
+      <nav class="flex items-center justify-between mt-8 lg:mt-14 px-5 lg:px-0">
+        <div class="flex items-center gap-3">
+          <button class="text-2xl lg:hidden">
             <i class="fa-solid fa-bars-staggered"></i>
           </button>
           <h3 class="text-2xl lg:text-36 font-extrabold text-black/80">
-            Hockey<span>’</span>s
+            Hockey<span class="text-main">’</span>s
           </h3>
         </div>
 
@@ -134,5 +137,86 @@
         </div>
       </nav>
     </header>
+
+    <main>
+      <!-- ! banner section -->
+      <section class="container mt-14 px-5 lg:px-0">
+        <div class="relative">
+          <div
+            class="carousel w-full min-h-[34.375rem] rounded-16 overflow-hidden"
+          >
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./Images/1.png" class="w-full object-cover bg-center" />
+              <div
+                class="absolute flex items-center gap-5 bottom-8 lg:left-8 left-1/2 -translate-x-1/2 lg:-translate-x-0"
+              >
+                <a
+                  href="#slide3"
+                  class="btn btn-circle bg-black/80 border-none text-white text-xl duration-300 hover:bg-black"
+                  >❮</a
+                >
+                <a
+                  href="#slide2"
+                  class="btn btn-circle bg-black/80 border-none text-white text-xl duration-300 hover:bg-black"
+                  >❯</a
+                >
+              </div>
+            </div>
+            <!--! slide 2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="./Images/2.png" class="w-full object-cover bg-center" />
+              <div
+                class="absolute flex items-center gap-5 bottom-8 lg:left-8 left-1/2 -translate-x-1/2 lg:-translate-x-0"
+              >
+                <a
+                  href="#slide1"
+                  class="btn btn-circle bg-black/80 border-none text-white text-xl duration-300 hover:bg-black"
+                  >❮</a
+                >
+                <a
+                  href="#slide3"
+                  class="btn btn-circle bg-black/80 border-none text-white text-xl duration-300 hover:bg-black"
+                  >❯</a
+                >
+              </div>
+            </div>
+
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="./Images/3.png" class="w-full object-cover bg-center" />
+              <div
+                class="absolute flex items-center gap-5 bottom-8 lg:left-8 left-1/2 -translate-x-1/2 lg:-translate-x-0"
+              >
+                <a
+                  href="#slide2"
+                  class="btn btn-circle bg-black/80 border-none text-white text-xl duration-300 hover:bg-black"
+                  >❮</a
+                >
+                <a
+                  href="#slide1"
+                  class="btn btn-circle bg-black/80 border-none text-white text-xl duration-300 hover:bg-black"
+                  >❯</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- ! badge -->
+          <div
+            class="bg-black/90 relative lg:absolute space-y-2 lg:space-y-4 lg:w-fit p-4 lg:p-8 rounded-16 lg:right-8 lg:bottom-8 mt-4 lg:mt-0"
+          >
+            <h3 class="text-lg text-white lg:text-2xl font-extrabold">
+              Meet all the heroes from the field
+            </h3>
+            <p
+              class="max-w-502 text-[#ffffff99] text-sm lg:text-base font-medium"
+            >
+              Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+              turpis placerat dolor. Purus urna in sit nullam proin.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <p class="mt-20"></p>
   </body>
 </html>
