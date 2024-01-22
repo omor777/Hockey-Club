@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
     <!-- ! google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,12 +31,40 @@
     <script>
       tailwind.config = {
         theme: {
+          screens: {
+            sm: "576px",
+            md: "768px",
+            lg: "1024px",
+            xl: "1170px",
+          },
+          container: {
+            center: true,
+          },
           extend: {
             colors: {
-              clifford: "#da373d",
+              main: "#FF4240",
+              btnHover: "#F52C29",
+              "dark-2": "#424247",
+              lightGreen: "#bced6d1a",
+              lightAmber: "#fddd5f1a",
+              lightBlue: "#629cf31a",
             },
             fontFamily: {
               manrope: ["Manrope", "sans-serif"],
+            },
+            fontSize: {
+              28: "1.75rem", // 28px
+              36: "2.25rem", // 36px
+            },
+            maxWidth: {
+              309: "19.3125rem", // 346px
+              346: "21.625rem", // 346px
+              502: "31.375rem", // 502px
+              518: "32.375rem", // 518px
+              607: "37.9375rem", // 607px
+            },
+            lineHeight: {
+              26: "1.625rem", // 26px
             },
           },
         },
@@ -45,10 +73,66 @@
     <!-- ! tailwind style directive -->
     <style type="text/tailwindcss">
       @layer utilities {
+        .text-color {
+          color: rgba(19, 19, 24, 0.6);
+        }
+        .footer-link {
+          color: rgba(255, 255, 255, 0.6);
+        }
       }
     </style>
   </head>
   <body class="font-manrope">
-    <h1 class="text-5xl font-bold text-center">Hello World!</h1>
+    <header class="container">
+      <nav class="flex items-center justify-between mt-14">
+        <div class="flex items-center gap-4">
+          <button class="btn btn-ghost text-2xl lg:hidden">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <h3 class="text-2xl lg:text-36 font-extrabold text-black/80">
+            Hockey<span>’</span>s
+          </h3>
+        </div>
+
+        <ul class="hidden lg:flex items-center gap-11">
+          <li>
+            <a class="text-dark-2 hover:text-main duration-300" href="#"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="text-dark-2 hover:text-main duration-300" href="#"
+              >About</a
+            >
+          </li>
+          <li>
+            <a class="text-dark-2 hover:text-main duration-300" href="#"
+              >Pages</a
+            >
+          </li>
+          <li>
+            <a class="text-dark-2 hover:text-main duration-300" href="#"
+              >blog</a
+            >
+          </li>
+          <li>
+            <a class="text-dark-2 hover:text-main duration-300" href="#"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <div class="flex items-center gap-6">
+          <p class="text-2xl hidden lg:block">
+            <i class="fa-solid fa-magnifying-glass text-dark-2"></i>
+          </p>
+          <button
+            class="py-2 px-4 lg:py-4 lg:px-6 text-lg lg:text-xl rounded-lg bg-main text-white font-bold hover:bg-btnHover duration-300"
+          >
+            Get Ticket
+          </button>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>
